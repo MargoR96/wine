@@ -57,8 +57,8 @@
 
 :root {
   --orange:#FFCA28;
-  --white:#E0E0E0;
-  --gray: #F5F5F5;
+  --white:#F5F5F5;
+  --gray:#E0E0E0 ;
 
 }
 
@@ -68,7 +68,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.6);
-  background-color: var(--white);
+  background-color: white;
   line-height: 1;
 }
 
@@ -89,5 +89,33 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navigation {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+
+.footer {
+  display: block;
+  background-color: var(--gray);
+}
+.footer__container {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
