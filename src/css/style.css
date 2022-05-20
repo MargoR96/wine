@@ -38,8 +38,8 @@
 
 @font-face {
   font-family: 'Amatic SC';
-  src: url('AmaticSC-Regular.woff2') format('woff2'),
-      url('AmaticSC-Regular.woff') format('woff');
+  src: url('../fonts/AmaticSC-Regular.woff2') format('woff2'),
+      url('../fonts/AmaticSC-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
   font-family: 'Amatic SC';
-  src: url('AmaticSC-Bold.woff2') format('woff2'),
-      url('AmaticSC-Bold.woff') format('woff');
+  src: url('../fonts/AmaticSC-Bold.woff2') format('woff2'),
+      url('../fonts/AmaticSC-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -59,6 +59,8 @@
   --orange:#FFCA28;
   --white:#F5F5F5;
   --gray:#E0E0E0 ;
+  --black-88:rgba(0, 0, 0, 0.88);
+  --black-60:rgba(0, 0, 0, 0.6);
 
 }
 
@@ -67,7 +69,7 @@ body {
   font-family:'Ubuntu', Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--black-60);
   background-color: white;
   line-height: 1;
 }
@@ -93,10 +95,20 @@ body {
 
 .container {
   width: 100%;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.group {
+  position: relative;
+  background-image: url('../img/content/hero.png');
+  min-height: 640px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 160px;
 }
 
 .navigation {
@@ -104,11 +116,11 @@ body {
 }
 
 .basket{
-  margin-right: 45px;
+  margin-right: 30px;
 }
 
 .favorites{
-  margin-right: 45px;
+  margin-right: 30px;
 }
 
 .humburger {
@@ -138,8 +150,55 @@ body {
 
 .copyright{
   margin: 0;
-  padding-top: 15px;
+  text-align: center;
+  padding-top: 30px;
   padding-bottom: 45px;
+}
+
+.caption{
+  margin: 0;
+  text-align: center;
+  font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  color: var(--black-88);
+  font-size: 56px;
+}
+
+.text{
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--black-88);
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  min-width: 245px;
+  min-height: 56px;
+  background-color: var(--orange);
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.button__text{
+  color: var(--black-88);
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.button-img{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.lines{
+  position: absolute;
 }
 
 .header__container {
@@ -147,11 +206,26 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   justify-content: space-between;
+  min-height: 55px;
+  background-color: var(--white);
 }
 
 .header-group{
   display: flex;
   align-items: center;
+}
+
+.hero__caption{
+  margin-top: 60px;
+}
+
+.hero__text{
+  margin-bottom: 25px;
+}
+
+.hero__lines {
+  top: 620px;
+  left: -100px;
 }
 
 .footer {
@@ -165,9 +239,8 @@ body {
   padding-left: 20px;
 }
 
-.footer-back{
-  position: relative;
+.footer__lines{
   left: -65px;
-  top:-30px;
+  top:-70px;
 }
 

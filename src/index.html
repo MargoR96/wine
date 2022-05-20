@@ -8,70 +8,74 @@
     <title>Wines</title>
 </head>
 <body>
+  <div class="group">
     <header class="header">
-        <div class="container header__container">
-            <h1>
-                <a href="#" class="logo header__logo">
-                   <img src="assets/img/icons/Logo.png" alt="Wines logo" width="168" height="40"> 
-                </a>
-            </h1>
-            <nav class="navigation header__navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <select name="winesgroup" id="winesgroup">
-                          <option selected>Подобрать вино</option>
-                          <optgroup label="По регионам">
-                            <option value="Крым">Крым</option>
-                            <option value="Кубань">Кубань</option>
-                            <option value="Кавказ">Кавказ</option>
-                          </optgroup>
-                          <optgroup label="Цвет">
-                            <option value="Красное">Красное</option>
-                            <option value="Оранжевое">Оранжевое</option>
-                            <option value="Розовое">Розовое</option>
-                            <option value="Белое">Белое</option>
-                          </optgroup>
-                          <optgroup label="Сахар">
-                            <option value="Сладкое">Сладкое</option>
-                            <option value="Полусладкое">Полусладкое</option>
-                            <option value="Полусухое">Полусухое</option>
-                            <option value="Сухое">Сухое</option>
-                          </optgroup>
-                        </select>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="" class="navigation__link">Как заказать</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="" class="navigation__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-group">
-              <div class="group-basket">
-                <a href="" class="basket">
-                    <img src="assets/img/icons/basket.svg" alt="basket icon" width="18" height="14">
-                </a>
-                <a href="" class="favorites">
-                    <img src="assets/img/icons/favorites.svg" alt="favorites icon" width="18" height="16">
-                </a>
-              </div>
-              <button type="button" class="humburger header__humburger">
-                <span class="humburger__content"></span>
-              </button>
+      <div class="container header__container">
+          <h1>
+              <a href="#" class="logo header__logo">
+                 <img src="assets/img/icons/Logo.png" alt="Wines logo" width="137" height="32"> 
+              </a>
+          </h1>
+          <nav class="navigation header__navigation">
+              <ul class="navigation__list">
+                  <li class="navigation__item">
+                      <select name="winesgroup" id="winesgroup">
+                        <option selected>Подобрать вино</option>
+                        <optgroup label="По регионам">
+                          <option value="Крым">Крым</option>
+                          <option value="Кубань">Кубань</option>
+                          <option value="Кавказ">Кавказ</option>
+                        </optgroup>
+                        <optgroup label="Цвет">
+                          <option value="Красное">Красное</option>
+                          <option value="Оранжевое">Оранжевое</option>
+                          <option value="Розовое">Розовое</option>
+                          <option value="Белое">Белое</option>
+                        </optgroup>
+                        <optgroup label="Сахар">
+                          <option value="Сладкое">Сладкое</option>
+                          <option value="Полусладкое">Полусладкое</option>
+                          <option value="Полусухое">Полусухое</option>
+                          <option value="Сухое">Сухое</option>
+                        </optgroup>
+                      </select>
+                  </li>
+                  <li class="navigation__item">
+                      <a href="" class="navigation__link">Как заказать</a>
+                  </li>
+                  <li class="navigation__item">
+                      <a href="" class="navigation__link">Контакты</a>
+                  </li>
+              </ul>
+          </nav>
+          <div class="header-group">
+            <div class="group-basket">
+              <a href="" class="basket">
+                  <img src="assets/img/icons/basket.svg" alt="basket icon" width="18" height="14">
+              </a>
+              <a href="" class="favorites">
+                  <img src="assets/img/icons/favorites.svg" alt="favorites icon" width="18" height="16">
+              </a>
             </div>
-        </div>
+            <button type="button" class="humburger header__humburger">
+              <span class="humburger__content"></span>
+            </button>
+          </div>
+      </div>
     </header>
+    <section class="hero">
+      <div class="container hero__container">
+        <h2 class="caption hero__caption">Российские вина,</h2>
+        <span class="text hero__text">которые стоит попробовать</span>
+        <a href="" class="button hero__button">
+          <span class="button__text">Выбрать своё вино</span>
+          <img src="assets/img/icons/arrow.svg" class="button-img" alt="Arrow icon" width="24" height="24">
+        </a>
+      </div>
+    </section>
+    <img class="lines hero__lines" src="assets/img/content/footer-img.svg" alt="background footer" width="900" height="80">
+  </div>
     <main>
-      <section class="hero">
-        <div class="container hero__container">
-          <h2 class="caption hero__caption">Российские вина,</h2>
-          <span class="text hero__text">которые стоит попробовать</span>
-          <a href="" class="button hero__button">
-            <span class="button__text">Выбрать своё вино</span>
-          </a>
-        </div>
-      </section>
       <section class="best">
         <div class="container best__container">
           <h2 class="visually-hidden">Отбор сортов</h2>
@@ -168,7 +172,7 @@
     </main>
     <footer class="footer">
         <div class="container footer__container">
-            <img class="footer-back" src="assets/img/content/footer-img.svg" alt="background footer" width="900" height="80">
+            <img class="lines footer__lines src="assets/img/content/footer-img.svg" alt="background footer" width="900" height="80">
             <p class="copyright">
               Данный сайт не является интернет-магазином. Мы работаем в строгом соответствии с законами РФ: не продаём и не доставляем алкоголь в ночное время; не продаём и не доставляем алкоголь несовершеннолетним; не осуществляем дистанционную продажу или продажу алкоголя иными способами, запрещёнными законами РФ.
             </p>
