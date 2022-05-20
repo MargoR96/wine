@@ -58,10 +58,13 @@
 :root {
   --orange:#FFCA28;
   --white:#F5F5F5;
+  --white-primary:#ffffff;
   --gray:#E0E0E0 ;
   --black-88:rgba(0, 0, 0, 0.88);
   --black-60:rgba(0, 0, 0, 0.6);
   --bege: #FFF8E1;
+  --green: #9CCC65;
+  --blue:#26C6DA;
 }
 
 body {
@@ -201,6 +204,36 @@ body {
   position: absolute;
 }
 
+.country{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 75px;
+  min-height: 30px;
+  border-radius: 6px;
+  color: var(--black-88);
+  left: 60px;
+}
+
+.country.--krum{
+  background-color: var(--orange);
+}
+
+.country.--kuban{
+  background-color: var(--green);
+  left: 55px;
+}
+
+.country.--kavkaz{
+  background-color: var(--blue);
+  left: 220px;
+}
+
+.price{
+  color:var(--black-88);
+}
+
 .header__container {
   display: flex;
   padding-left: 20px;
@@ -265,10 +298,82 @@ body {
 }
 
 .primary__text{
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.primary__text.--caption{
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
   margin-bottom: 45px;
+}
+
+.primary__list{
+  margin:0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(3, 400px);
+  gap: 8px;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.primary__item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  background-color: var(--white-primary);
+  border-radius: 12px;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.04), 0px 7.7037px 19.1111px rgba(0, 0, 0, 0.0242963), 0px 1.62963px 4.88889px rgba(0, 0, 0, 0.0157037);
+}
+
+.primary__item.--third {
+  grid-column: span 2;
+}
+
+.primary__foto{
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.primary__foto.--kavkaz{
+  min-width: 290px;
+}
+
+.primary__text{
+  margin:0;
+  text-align: start;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 32px 16px 12px 16px;
+}
+
+.primary_definition{
+  display: block;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.primary__group{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  margin-top: auto;
+}
+
+.primary__button {
+  background-color: var(--white);
+  border: 2px solid var(--orange) ;
 }
 
 .footer {
